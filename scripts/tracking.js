@@ -130,5 +130,12 @@ function renderOrderTracking() {
         }
     }
     renderProductTracking()
+    document.querySelector('.js-search-bar').addEventListener('keydown', (event) => {
+
+    if (event.key === 'Enter') {
+      const search = document.querySelector('.js-search-bar').value.toLowerCase();
+      window.location.href = `index.html?search=${search}`;
+    }
+  });
 }
 loadTrackingProducts().then(renderOrderTracking)
