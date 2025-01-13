@@ -10,14 +10,14 @@ export function renderCheckoutHeader() {
     
     <div class="header-content">
       <div class="checkout-header-left-section">
-        <a href="../../../index.html">
+        <a href="index.html">
           <img class="amazon-logo" src="images/amazon-logo.png">
           <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
         </a>
       </div>
 
       <div class="checkout-header-middle-section">
-        Checkout (<a class="return-to-home-link js-checkout-header-show-items" href="../../../index.html">${cartQuantity} items</a>)
+        Checkout (<a class="return-to-home-link js-checkout-header-show-items" href="index.html">${cartQuantity} items</a>)
       </div>
 
       <div class="checkout-header-right-section">
