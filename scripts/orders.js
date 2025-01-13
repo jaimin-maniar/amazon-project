@@ -137,10 +137,17 @@ function renderOrders() {
       console.log('MatchingProduct: ', matchingProductForOrder);
     });
   }
+  
   renderOrderContainer();
   document.querySelector(`.js-order-container`).innerHTML = ordersHTML
   showCartQuantityOnHeader();
+  document.querySelector('.js-search-bar').addEventListener('keydown', (event) => {
 
+    if (event.key === 'Enter') {
+      const search = document.querySelector('.js-search-bar').value;
+      window.location.href = `index.html?search=${search}`;
+    }
+  });
   const buyAgainButtons = document.querySelectorAll('.js-buy-again-button')
   buyAgainButtons.forEach((buyAgainButton) => {
     buyAgainButton.addEventListener('click', () => {
@@ -151,13 +158,7 @@ function renderOrders() {
       showCartQuantityOnHeader();
     })
   })
-  document.querySelector('.js-search-bar').addEventListener('keydown', (event) => {
-
-    if (event.key === 'Enter') {
-      const search = document.querySelector('.js-search-bar').value;
-      window.location.href = `index.html?search=${search}`;
-    }
-  });
+  
 };
 if (window.location.pathname.includes('orders.html')) {
   loadProducts().then(renderOrders);
