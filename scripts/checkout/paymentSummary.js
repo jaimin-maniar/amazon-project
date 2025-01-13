@@ -128,7 +128,7 @@ export function renderPaymentSummary() {
     if (cart.cartItems.length === 0) {
         let viewProductsHTML =
             `
-            <a href="./index.html">
+            <a href="index.html">
             <button class="view-products-button">
                 View Products
             </button>
