@@ -13,7 +13,7 @@ function showCartQuantityOnHeader() {
   console.log('cartQuantity', cartQuantity)
   let headerHTML = `
     <div class="amazon-header-left-section">
-      <a href="amazon.html" class="header-link">
+      <a href="index.html" class="header-link">
         <img class="amazon-logo" src="images/amazon-logo-white.png">
         <img class="amazon-mobile-logo" src="images/amazon-mobile-logo-white.png">
       </a>
