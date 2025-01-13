@@ -128,6 +128,11 @@ function renderOrderTracking() {
 
             document.querySelector('.js-order-tracking').innerHTML = productTrackingHTML;
         }
+        const searchButton = document.querySelector('.js-search-button');
+  searchButton.addEventListener('click', () => {
+    const search = document.querySelector('.js-search-bar').value;
+    window.location.href = `index.html?search=${search}`;
+  });
          document.querySelector('.js-search-bar').addEventListener('keydown', (event) => {
 
             if (event.key === 'Enter') {
