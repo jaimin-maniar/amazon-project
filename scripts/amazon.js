@@ -140,7 +140,7 @@ function renderProductsGrid() {
 
     if (event.key === 'Enter') {
       const search = document.querySelector('.js-search-bar').value;
-      window.location.href = `amazon.html?search=${search}`;
+      window.location.href = `jaimin-maniar.github.io/amazon-project/amazon.html?search=${search}`;
     }
   });
 }
